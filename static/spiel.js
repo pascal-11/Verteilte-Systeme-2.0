@@ -35,9 +35,8 @@ document.addEventListener('keyup', function (event) {
   }
 });
 
-// Sendet die Events "neuer Spieler" und "startBall" an den Server
+// Sendet das Event mit dem Namen "neuer Spieler" an den Server
 socket.emit('neuer Spieler');
-socket.emit("startBall");
 
 
 // Schleife, welche die Ballbewegung und den oben in den keydown und keyup Events geänderten Boolean an den Server überträgt ()Übertragungsrate = 60 mal in der Sekunde)

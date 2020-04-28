@@ -162,6 +162,8 @@ io.on('connection', function (socket) {
         neueAnmeldung = true;
         spielerAnzahl++;
         break;
+        
+    // Ist der linke Platz belegt, wird der nächste sich verbindende Spieler, den rechten Platz erhalten
       case 2:
         Spieler[socket.id] = {
           x: 595,
